@@ -1,4 +1,4 @@
-package dynamicgrouplayout;
+package chatbot;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -17,7 +17,7 @@ import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 
-public class DynamicGroupLayout {
+public class Chatbot {
 
     private GroupLayout layout;
     private GroupLayout.ParallelGroup parallel;
@@ -27,7 +27,7 @@ public class DynamicGroupLayout {
     static int actionFlag;
     static int subActionFlag;
     
-    public DynamicGroupLayout(){
+    public Chatbot(){
         conv = new Conversation();
         data = new Data();
         actionFlag = 0;
@@ -129,7 +129,7 @@ public class DynamicGroupLayout {
             f.setPreferredSize(new Dimension(600, 500));
             f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             
-            final DynamicGroupLayout dgl = new DynamicGroupLayout();
+            final Chatbot dgl = new Chatbot();
             final JPanel panel = dgl.create();
             
             JScrollPane jsp = new JScrollPane(panel);

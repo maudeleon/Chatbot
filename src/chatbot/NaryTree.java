@@ -1,4 +1,4 @@
-package dynamicgrouplayout;
+package chatbot;
 
 import java.util.stream.Stream;
 
@@ -14,7 +14,7 @@ public class NaryTree {
         root = null;
     }
     
-    public void containsNode(Node current, String instruccion, DynamicGroupLayout dgl, int actionFlag, int subActionFlag) {
+    public void containsNode(Node current, String instruccion, Chatbot dgl, int actionFlag, int subActionFlag) {
         
         switch (actionFlag) {
             

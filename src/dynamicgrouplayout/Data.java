@@ -26,6 +26,8 @@ public class Data {
     ArrayList<String> arr_dpi;
     ArrayList<String> arr_estado;
     ArrayList<String> arr_saldo;
+    ArrayList<String> arr_fecha_corte;
+    ArrayList<String> arr_fecha_pago;
     
     public Data(){
         
@@ -43,6 +45,8 @@ public class Data {
         arr_dpi = new ArrayList<>();
         arr_estado = new ArrayList<>();
         arr_saldo = new ArrayList<>();
+        arr_fecha_corte = new ArrayList<>();
+        arr_fecha_pago = new ArrayList<>();
         
         loadData();
         
@@ -75,6 +79,8 @@ public class Data {
                 arr_dpi.add(info[11]);
                 arr_estado.add(info[12]);
                 arr_saldo.add(info[13]);
+                arr_fecha_corte.add(info[14]);
+                arr_fecha_pago.add(info[15]);
             }
             
             System.out.println("Finaliza la carga de información.");
@@ -107,7 +113,11 @@ public class Data {
                     " *** " +
                     arr_estado.get(i) +
                     " *** " +
-                    arr_saldo.get(i);
+                    arr_saldo.get(i) +
+                    " *** " +
+                    arr_fecha_corte.get(i) +
+                    " *** " +
+                    arr_fecha_pago.get(i);
                 
                 //System.out.println(row);
             }

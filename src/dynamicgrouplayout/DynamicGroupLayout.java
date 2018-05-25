@@ -26,14 +26,12 @@ public class DynamicGroupLayout {
     final Data data;
     static int actionFlag;
     static int subActionFlag;
-    static int omeActionFlag;
     
     public DynamicGroupLayout(){
         conv = new Conversation();
         data = new Data();
         actionFlag = 0;
         subActionFlag = 0;
-        omeActionFlag = 0;
     }
     
     private JPanel create() {
@@ -123,10 +121,6 @@ public class DynamicGroupLayout {
         subActionFlag = flag;
     }
     
-    public void setOmeActionFlag(int flag){
-        omeActionFlag = flag;
-    }
-    
     public static void main(String[] args) {
         
         EventQueue.invokeLater(() -> {
@@ -164,7 +158,7 @@ public class DynamicGroupLayout {
                         panel.validate();
                         txtEntrada.setText("");
                         
-                        conv.tree.containsNode(conv.tree.root, mensaje, dgl, actionFlag, subActionFlag, omeActionFlag);
+                        conv.tree.containsNode(conv.tree.root, mensaje, dgl, actionFlag, subActionFlag);
                         
                         f.revalidate();
                         JScrollBar vertical = jsp.getVerticalScrollBar();
@@ -190,7 +184,7 @@ public class DynamicGroupLayout {
                         panel.validate();
                         txtEntrada.setText("");
                         
-                        conv.tree.containsNode(conv.tree.root, mensaje, dgl, actionFlag, subActionFlag, omeActionFlag);
+                        conv.tree.containsNode(conv.tree.root, mensaje, dgl, actionFlag, subActionFlag);
                         
                         f.revalidate();
                         JScrollBar vertical = jsp.getVerticalScrollBar();

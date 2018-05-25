@@ -47,7 +47,7 @@ public class Conversation {
         op5.palabra_clave[0] = "informacion";
         op5.palabra_clave[1] = "de";
         op5.palabra_clave[2] = "tarjeta";
-        op5.operacion1 = new Node("Con gusto te puedo brindar información acerca de las tarjetas de crédito. ¿Me puedes indicar tu nombre?");
+        op5.operacion1 = new Node("Con gusto te puedo brindar información acerca de tu tarjeta de credito. ¿Me puedes indicar tu DPI?");
         op5.salida = new Node("Lo siento no me aparece ninguna tarjeta de crédito asociada con ese DPI, por favor visita alguna de nuestras agencias y un asesor te estará apoyando con tu solicitud.");
         
         exit = raiz.salida = new Node("No tengo esa petición entre mis registros.  Intenta de nuevo con un tema relacionado a las tarjetas de credito.");

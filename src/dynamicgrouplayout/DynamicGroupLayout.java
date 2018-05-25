@@ -23,11 +23,17 @@ public class DynamicGroupLayout {
     private GroupLayout.ParallelGroup parallel;
     private GroupLayout.SequentialGroup sequential;
     private static Conversation conv;
-    private final Data data;
+    final Data data;
+    static int actionFlag;
+    static int subActionFlag;
+    static int omeActionFlag;
     
     public DynamicGroupLayout(){
         conv = new Conversation();
         data = new Data();
+        actionFlag = 0;
+        subActionFlag = 0;
+        omeActionFlag = 0;
     }
     
     private JPanel create() {
@@ -45,7 +51,7 @@ public class DynamicGroupLayout {
         
     }
     
-    private void sendBotMessage(String message){
+    public void sendBotMessage(String message){
         
         JLabel bot_icon = new JLabel();
         bot_icon.setIcon(new ImageIcon(getClass().getClassLoader().getResource("resources/images/robot.png")));
@@ -77,7 +83,7 @@ public class DynamicGroupLayout {
         
     }
     
-    private void sendUserMessage(String message){
+    public void sendUserMessage(String message){
         
         JLabel user_icon = new JLabel();
         user_icon.setIcon(new ImageIcon(getClass().getClassLoader().getResource("resources/images/user.png")));
@@ -107,6 +113,18 @@ public class DynamicGroupLayout {
         parallel.addGroup(layout.createSequentialGroup().addComponent(user_icon).addComponent(user_bubble));
         sequential.addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(user_icon).addComponent(user_bubble));
         
+    }
+    
+    public void setActionFlag(int flag){
+        actionFlag = flag;
+    }
+    
+    public void setSubActionFlag(int flag){
+        subActionFlag = flag;
+    }
+    
+    public void setOmeActionFlag(int flag){
+        omeActionFlag = flag;
     }
     
     public static void main(String[] args) {
@@ -146,8 +164,7 @@ public class DynamicGroupLayout {
                         panel.validate();
                         txtEntrada.setText("");
                         
-                        String response = conv.tree.containsNode(conv.tree.root, mensaje);
-                        dgl.sendBotMessage(response);
+                        conv.tree.containsNode(conv.tree.root, mensaje, dgl, actionFlag, subActionFlag, omeActionFlag);
                         
                         f.revalidate();
                         JScrollBar vertical = jsp.getVerticalScrollBar();
@@ -173,8 +190,7 @@ public class DynamicGroupLayout {
                         panel.validate();
                         txtEntrada.setText("");
                         
-                        String response = conv.tree.containsNode(conv.tree.root, mensaje);
-                        dgl.sendBotMessage(response);
+                        conv.tree.containsNode(conv.tree.root, mensaje, dgl, actionFlag, subActionFlag, omeActionFlag);
                         
                         f.revalidate();
                         JScrollBar vertical = jsp.getVerticalScrollBar();

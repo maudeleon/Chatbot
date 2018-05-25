@@ -1,0 +1,21 @@
+Id;Nombre;Apellido;Sexo;País;Fecha de Nacimiento;Teléfono;Tarjeta de Crédito;Tipo de TDC;Fecha de TDC;CCV/CCV2;DPI
+1;Iiya;Leal Robledo;Masculino;Guatemala;1 de Noviembre de 1948;+502(844)-5877112;4.08073E+15;Visa;Nov(11) de 2014;815;7410
+2;Clorinda;Herrera Peres;Femenino;Guatemala;20 de Abril de 1932;+502(046)-1018552;4.01313E+15;Visa;Mar(3) de 2015;95;8653
+3;Basem;Leiva Cordova;Masculino;Guatemala;20 de Septiembre de 1945;+502(858)-5800525;5.91395E+15;Mastercard;Nov(11) de 2015;826;823
+4;Lucio;Estevez Rodriguez;Masculino;Guatemala;27 de Marzo de 1931;+502(242)-4260280;4.7101E+15;Visa;Dic(12) de 2015;215;280
+5;Desiree;Mora Escamilla;Femenino;Guatemala;2 de Septiembre de 1971;+502(340)-6369469;4.2514E+15;Visa;Abr(4) de 2015;345;9061
+6;Cecilia;Soliz Barrera;Femenino;Guatemala;10 de Octubre de 1995;+502(348)-9349581;4.81102E+15;Visa;Abr(4) de 2016;345;9881
+7;Ppsamtic;Nevarez Bonilla;Masculino;Guatemala;24 de Noviembre de 1941;+502(645)-6676717;4.99818E+15;Visa;Jul(7) de 2013;655;6518
+8;Luisa;Griego Aguayo;Femenino;Guatemala;5 de Noviembre de 1924;+502(641)-4656377;4.29788E+15;Visa;Feb(2) de 2015;695;6177
+9;Lana;Abeyta Pena;Femenino;Guatemala;22 de Junio de 1952;+502(055)-4045842;5.35233E+15;Mastercard;Feb(2) de 2013;96;5542
+10;Joana;Rojas Cordova;Femenino;Guatemala;8 de Febrero de 1987;+502(354)-9381330;5.3069E+15;Mastercard;Abr(4) de 2013;386;1436
+11;Avitzedek;Matias Bahena;Masculino;Guatemala;5 de Septiembre de 1950;+502(345)-0316245;4.52686E+15;Visa;May(5) de 2013;395;6546
+12;Paulina;Montes Archuleta;Femenino;Guatemala;17 de Junio de 1998;+502(956)-7902555;5.64215E+15;Mastercard;Dic(12) de 2015;976;2652
+13;Davide;Centeno Nino;Masculino;Guatemala;19 de Octubre de 1926;+502(249)-2254708;4.16078E+15;Visa;Jun(6) de 2015;245;4900
+14;Bartalmai;Ontiveros Giron;Masculino;Guatemala;5 de Mayo de 1980;+502(356)-8300938;5.37738E+15;Mastercard;Oct(10) de 2013;306;637
+15;Dora;Ybarra Aguirre;Femenino;Guatemala;23 de Febrero de 1935;+502(958)-7950906;5.15636E+15;Mastercard;Ene(1) de 2014;946;806
+16;Encarnicion;Henriquez Rivas;Femenino;Guatemala;4 de Marzo de 1992;+502(148)-0123323;4.90163E+15;Visa;Jun(6) de 2013;145;3821
+17;Anali;Rendon Valadez;Femenino;Guatemala;26 de Agosto de 1957;+502(151)-6127663;5.22154E+15;Mastercard;Oct(10) de 2014;176;7161
+18;Harakhty;Rojo Acevedo;Masculino;Guatemala;5 de Noviembre de 1945;+502(445)-4440254;4.73234E+15;Visa;Ago(8) de 2016;455;552
+19;Amara;Mateo Gil;Femenino;Guatemala;1 de Agosto de 1958;+502(157)-0125363;5.37054E+15;Mastercard;Abr(4) de 2016;166;5760
+20;Belinda;Hernadez Ulibarri;Femenino;Guatemala;23 de Julio de 1948;+502(247)-8274088;4.60698E+15;Visa;Abr(4) de 2013;205;4786

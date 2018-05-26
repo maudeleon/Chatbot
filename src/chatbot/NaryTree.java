@@ -1,5 +1,6 @@
 package chatbot;
 
+import static java.lang.System.exit;
 import java.util.stream.Stream;
 
 public class NaryTree {
@@ -37,6 +38,9 @@ public class NaryTree {
                 }else if(Stream.of(current.operacion5.palabra_clave).allMatch(instruccion::contains)){
                     dgl.sendBotMessage(current.operacion5.operacion1.instruccion);
                     dgl.setActionFlag(5);
+                }else if(Stream.of(current.operacion6.palabra_clave).allMatch(instruccion::contains)){
+                    dgl.sendBotMessage(current.operacion6.salida.instruccion);
+                    //exit(0);
                 }else{
                     dgl.sendBotMessage(current.salida.instruccion);
                     dgl.setActionFlag(0);

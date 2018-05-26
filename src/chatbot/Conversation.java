@@ -7,7 +7,7 @@ public class Conversation {
     public Conversation(){
         
         Node raiz;
-        Node op1, op2, op3, op4, op5, exit;
+        Node op1, op2, op3, op4, op5, op6, exit;
         tree = new NaryTree();
         
         raiz = tree.root = new Node("Hola! Soy chatbot. ¿Cómo puedo ayudarte?");
@@ -49,6 +49,12 @@ public class Conversation {
         op5.palabra_clave[2] = "tarjeta";
         op5.operacion1 = new Node("Con gusto te puedo brindar información acerca de tu tarjeta de credito. ¿Me puedes indicar tu DPI?");
         op5.salida = new Node("Lo siento no me aparece ninguna tarjeta de crédito asociada con ese DPI, por favor visita alguna de nuestras agencias y un asesor te estará apoyando con tu solicitud.");
+        
+        op6 = raiz.operacion6 = new Node("salida de programa");
+        op6.palabra_clave[0] = "";
+        op6.palabra_clave[1] = "adios";
+        op6.palabra_clave[2] = "";
+        op6.salida = new Node("Hasta luego! Fue un gusto ayudarte!");
         
         exit = raiz.salida = new Node("No tengo esa petición entre mis registros.  Intenta de nuevo con un tema relacionado a las tarjetas de credito.");
         
